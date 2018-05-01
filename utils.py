@@ -73,7 +73,7 @@ def vocabToEmbed():
 	torch.save(emb,'embedding')
 
 def buildData():
-	fp = open("/home/sayali/CS726/Project/data/train.txt",'r')
+	fp = open("/home/sayali/CS726/Project/data/train_1.txt",'r')
 	df = pd.read_pickle('/home/sayali/CS726/Project/data/vocab.pkl')
 	df.columns = ['word','id']
 	df1 = df.set_index('word')
